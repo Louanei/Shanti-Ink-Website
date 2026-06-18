@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Glowkeeper/creative-process-software-bootcamp-jun26"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Shanti-Ink-Website"
+	}
+}
