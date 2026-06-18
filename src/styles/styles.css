@@ -1,14 +1,27 @@
 body    {
-    margin: 0;
+    margin: 100px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffde74;
-    background-color:rgb(11, 75, 45)
+     background-color:rgb(11, 75, 45);
+}
+.onimask {
+    background-image: url("/imports/pib.jpg");
+    background-size: auto;
+    width:60em;
+    margin: 0 auto;
+    border: 2px solid;
+    padding:0.3em 0;
+    position: relative;
+    background-position: center;
+    background-repeat:no-repeat;
 }
 
-header
-nav
-main
+header,
+nav,
+main,
 footer { 
-    max-width:1000px;
+    max-width:10px;
+    text-align: center;
 
 }
+
