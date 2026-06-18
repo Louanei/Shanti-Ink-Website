@@ -25,4 +25,4 @@ A business website for independent tattoo artist Shanti Ink.
 - Terms and conditions, policies and privacy section which will highlight tattoo artist's unique boundaries and regulations, tattoo risks and general warnings and information, aftercare information, data protection and tattoo artist's right to keep deposit if customer pulls out last minute. Design labour costs start from ''£30'' which is included in the mention of final price.TBC (!)
 - Gallery for healed and Fresh work showcasing, I would like to make it easy for my sister to be able to add more images as time goes on.
 - Home Page to include ''What is Hand Poke Tattoo?'' section. What else? TBD (!)
-- Colour Scheme planned to be Green and Gold and include inported hand drawn elements such as the logo and the buttons.
+- Colour Scheme planned to be Green and Gold and include inported hand drawn elements such as the logo and the buttons. TBD (!)
