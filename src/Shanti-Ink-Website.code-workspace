@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "creative-process-software-bootcamp-jun26",
+			"path": "../../creative-process-software-bootcamp-jun26"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Shanti-Ink-Website"
+	}
+}

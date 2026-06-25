@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shanti Ink Tattoo v1</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <div class="onimask">
@@ -17,32 +17,45 @@
   <nav>
 <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
+      <li><a href="myjourney.html">My Journey</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
   </nav>
-  <section>
-    <h2>Dashboard!!!!!</h2>
-    </section>
     <section>
-      <h3>To do</h3>
-      <article>
-        <p> Add Javascript</p>
+      <h2>About me</h2>
+      <article class='aboutme'>
+        <p>Welcome! My name is Radha, i'm an artist and I have been practicing tattooing for the past 5 years. I specialize in Stick and Poke tattooing and dotwork. My style inspired heavily from traditional Japanese art, nature and geometrical symbolism. I currently practice at fnasdkfbaskgb studio. Bookings only, if you're interested in getting tattooed. by me please complete the form below. Feel free to learn more about me on 'my journey' and support my work by checking out my merch page or buymeacoffee. Thanks for browsing!</p>
       </article>
-    </section>
-    <section>
-      <h3>In progress</h3>
-      <p>Build Dashboard Interface</p>
-    </section>
-    <section>
-      <h3>Done</h3>
-      <p>Write Project README</p>
+      <flexbox class="selfie">
+        <img src="imports/selfie.jpeg" alt="picture of Shanti ink" width="300" height="400">
+      </flexbox>
     </section>
   <main>
-
+//vvv new stuff
+<section>
+  <H2>Booking Inquiries</H2>
+  <div>
+<form action="'https://formspree.io' method='POST' enctype='multipart/form-data">    
+  <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your first name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email"required>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Please include in your message: Concept, Size, Placement, budget and Dates of availability. IF ALL THESE DETAILS ARE NOT PROVIDED YOUR INQUIRY MAY BE IGNORED." required></textarea>
+    <label for="reference">Attachments (optional):</label>
+    <input type="file" id="reference" name="reference[]" accept="image/*" multiple>
+    <div id="preview-container" style="display: flex; gap: 10px; flex-wrap: wrap; margin: 15px 0;"></div>
+    <button type="submit">Send</button>
+  </form>
+  //new stuff ^^^
+  </div>
+</section>
   </main>
 </div>
   <footer>
-    <p>Project Tracker Copyright &copy KAIIIIII 2026</p>
+    <p>ShantiInk Copyright &copy Louanei 2026</p>
   </footer>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>
