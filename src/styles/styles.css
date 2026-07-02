@@ -1,21 +1,22 @@
 body    {
-    margin: 100px;
+    margin: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffde74;
      background-color:rgb(11, 75, 45);
 }
 .onimask {
-    background-image: url('../imports/pib.jpg');
+    background-image: url('../imports/oni 4.png');
     background-size: auto;
     width:60em;
+    max-width: 100%;
     margin: 0 auto;
     border: 2px solid;
-    padding:0.3em 0;
+    padding:2em 0;
     position: relative;
     background-position: center;
     background-repeat:no-repeat;
 }
-
+🫪🫪🫪
 .aboutme {
     font-family:Arial, Helvetica, sans-serif;
     font-size:1.2em;
@@ -31,8 +32,20 @@ header,
 nav,
 main,
 footer { 
-    max-width:10px;
+    max-width:100%;
     text-align: center;
+    margin: 20px, auto;
+
+}
+
+form
+
+.hi,
+.steve {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 0 20px;
+    font-family:'Times New Roman', Times, serif;
 
 }
 
