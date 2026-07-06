@@ -1,41 +1,41 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shanti Ink Tattoo v1</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
 <div class="onimask">
+
   <header>
     <h1>Shanti Ink</h1>
     <h3>Tattoo</h3>
     <p>Brighton local Independent Artist & Stick and Poke Professional</p>
   </header>
 
+<div class="index">
   <nav>
-<ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="myjourney.html">My Journey</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      </ul>
-  </nav>
-    <section>
-      <h2>About me</h2>
-      <article class='aboutme'>
-        <p>Welcome! My name is Radha, i'm an artist and I have been practicing tattooing for the past 5 years. I specialize in Stick and Poke tattooing and dotwork. My style inspired heavily from traditional Japanese art, nature and geometrical symbolism. I currently practice at fnasdkfbaskgb studio. Bookings only, if you're interested in getting tattooed. by me please complete the form below. Feel free to learn more about me on 'my journey' and support my work by checking out my merch page or buymeacoffee. Thanks for browsing!</p>
+    <article id="index">
+      <p class="home"><a href="index.html">Home</a></p><p class="myjourney"><a href="myjourney.html">My Journey</a></p><p class="portfolio"><a href="portfolio.html">Portfolio</a></p><p class="contact"><a href="contact.html">Contact</a></p>
       </article>
-      <flexbox class="selfie">
-        <img src="imports/selfie.jpeg" alt="picture of Shanti ink" width="300" height="400">
-      </flexbox>
+  </nav>
+</div>
+<br/>
+
+    <section id="about" width="300" height="400">
+      <div class="abtme-name"><h2>About me</h2></div><div class="abtme-desc"><article><p>Welcome! My name is Radha, i'm an artist and I have been practicing tattooing for the past 5 years. I specialize in Stick and Poke tattooing and dotwork. My style inspired heavily from traditional Japanese art, nature and geometrical symbolism. I currently practice at fnasdkfbaskgb studio. Bookings only, if you're interested in getting tattooed. by me please complete the form below. Feel free to learn more about me on 'my journey' and support my work by checking out my merch page or buymeacoffee. Thanks for browsing!</p></article></div><div class="abtme-selfie"><img src="imports/selfie.jpeg" alt="picture of Shanti ink" width="300" height="375"></div>
     </section>
+
   <main>
-//vvv new stuff
+
 <section>
   <H2>Booking Inquiries</H2>
-  <div>
+  <div class="booking-inquiries">
+    <p> If you are interested in booking a session with me, please fill out the form below.</p>
 <form action="https://formspree.io/f/mojopvjv" method="POST" enctype="multipart/form-data" id="booking-form">    
   <label for="name">Name:</label>
     <input type="text" id="name" name="name" placeholder="Your first name" required>
@@ -48,14 +48,18 @@
     <div id="preview-container" style="display: flex; gap: 10px; flex-wrap: wrap; margin: 15px 0;"></div>
     <button type="submit">Send</button>
   </form>
-  //new stuff ^^^
   </div>
+
 </section>
+
   </main>
 </div>
+
   <footer>
     <p>ShantiInk Copyright &copy Louanei 2026</p>
   </footer>
+
   <script src="scripts/scripts.js"></script>
+
 </body>
 </html>

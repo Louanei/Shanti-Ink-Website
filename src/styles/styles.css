@@ -1,5 +1,5 @@
 body    {
-    margin: 40px;
+    margin: 2%;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffde74;
      background-color:rgb(11, 75, 45);
@@ -16,36 +16,79 @@ body    {
     background-position: center;
     background-repeat:no-repeat;
 }
-🫪🫪🫪
-.aboutme {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:1.2em;
+
+#about div{
+    display: inline-block;
 }
 
-.selfie {
-    display: flex;
-    justify-content: flex-end;
+.abtme-name {
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(20, 12, 48, 0.5);
+
+}
+.abtme-desc {
+    width: 35%;
+     margin-left: auto;
+    margin-right: auto;
+     background-color: rgb(20, 12, 48);
+}
+
+.abtme-selfie {
+    width: 25%;
+    margin: 0 auto;
+     background-color: rgb(20, 12, 48);
 
 }
 
-header,
+header
+{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 nav,
 main,
 footer { 
     max-width:100%;
+    text-align: auto;
+    margin: 20px 0;
+
+}
+
+.index {
     text-align: center;
-    margin: 20px, auto;
-
+    width: 80%;
+    padding: 0.01em;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2em center;
+    background-color:rgb(11, 75, 45);
+    border: 2px solid #ffde74;
 }
 
-form
-
-.hi,
-.steve {
-    max-width: 800px;
-    margin: 0 auto; 
-    padding: 0 20px;
-    font-family:'Times New Roman', Times, serif;
-
+#index p {
+    display:inline-block;
 }
 
+.home {
+    width: 25%;
+}
+.myjourney {
+    width: 25%;
+}
+.portfolio  {
+    width: 25%;
+}
+.contact {
+    width: 25%;
+}
+
+
+/* yayyyy ive figured out how to leave comments hurray!
+
+/* i will likely have to rejig a lot of my css as i am re aquainting myself with it and understanding my own code.
+//* ALSO I have a fractured WRIST, so this is CHALLANGING AFFFFF - Prepare to see a LOT of comments of me complaining about it inbetween code.
+
+*/ 
