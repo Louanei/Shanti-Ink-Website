@@ -5,7 +5,7 @@ body    {
      background-color:rgb(11, 75, 45);
 }
 .onimask {
-    background-image: url('../imports/oni 4.png');
+    background-image: url('./assets/oni 4.png');
     background-size: auto;
     width:60em;
     max-width: 100%;
@@ -17,29 +17,49 @@ body    {
     background-repeat:no-repeat;
 }
 
-#about div{
-    display: inline-block;
+#about {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgb(20, 12, 48, 0.5);
+}
+
+#about > div {
+  height: 400px;
+  box-sizing: border-box;
+      background-color: rgb(8, 57, 12, 0.2);
 }
 
 .abtme-name {
-    width: 25%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(20, 12, 48, 0.5);
+    width: 40%;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 
 }
 .abtme-desc {
-    width: 35%;
-     margin-left: auto;
-    margin-right: auto;
-     background-color: rgb(20, 12, 48);
+    width: 28.6%;
+     background-color: rgb(8, 57, 12, 0.2);
+      text-align: center;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 0.9em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 .abtme-selfie {
     width: 25%;
-    margin: 0 auto;
-     background-color: rgb(20, 12, 48);
+     background-color: rgb(20, 12, 48, 0.1);
 
+}
+
+.booking-inquiries {
+  background-color: black;
+  width: 80%;
+ 
+  
 }
 
 header
@@ -63,7 +83,8 @@ footer {
     padding: 0.01em;
     margin-left: auto;
     margin-right: auto;
-    margin: 2em center;
+    margin: 2em auto;
+    margin-bottom: 10em;
     background-color:rgb(11, 75, 45);
     border: 2px solid #ffde74;
 }
@@ -92,3 +113,5 @@ footer {
 //* ALSO I have a fractured WRIST, so this is CHALLANGING AFFFFF - Prepare to see a LOT of comments of me complaining about it inbetween code.
 
 */ 
+
+/*boop boop stage change check*/
