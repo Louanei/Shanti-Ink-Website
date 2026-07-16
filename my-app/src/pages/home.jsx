@@ -85,37 +85,9 @@ export default function Home() {
     }
   };
 
-  return (
-    <>
-        <br />
-        <section id="about">
-          <div className="abtme-name">
-            <h2 strong="true">About me</h2>
-          </div>
-          <div className="abtme-desc">
-            <article>
-              <p>
-                Welcome! My name is Radha, I&apos;m an artist and I have been practicing
-                tattooing for the past 5 years. I specialize in Stick and Poke
-                tattooing and dotwork. My style is inspired heavily by traditional
-                Japanese art, nature, and geometrical symbolism. Bookings only—if you&apos;re
-                interested in getting tattooed by me, please complete the form below. Feel free to
-                learn more about me on &apos;My Journey&apos; and support my work by checking
-                out my merch page or Buy Me a Coffee. Thanks for browsing!
-              </p>
-            </article>
-          </div>
-          <div className="abtme-selfie">
-            <img
-              src={selfieImg}
-              alt="Shanti Ink artist selfie"
-              width={300}
-              height={400}
-            />
-          </div>
-        </section>
-        <main>
-          <section>
+  function BookingInquiry() {
+    return(
+                <section>
             <h2>Booking Inquiries</h2>
             <div className="booking-inquiries">
               <p>
@@ -212,6 +184,40 @@ export default function Home() {
               </form>
             </div>
           </section>
+    )
+  }
+
+  return (
+    <>
+        <br />
+        <section id="about">
+          <div className="abtme-name">
+            <h2 strong="true">About me</h2>
+          </div>
+          <div className="abtme-desc">
+            <article>
+              <p>
+                Welcome! My name is Radha, I&apos;m an artist and I have been practicing
+                tattooing for the past 5 years. I specialize in Stick and Poke
+                tattooing and dotwork. My style is inspired heavily by traditional
+                Japanese art, nature, and geometrical symbolism. Bookings only—if you&apos;re
+                interested in getting tattooed by me, please complete the form below. Feel free to
+                learn more about me on &apos;My Journey&apos; and support my work by checking
+                out my merch page or Buy Me a Coffee. Thanks for browsing!
+              </p>
+            </article>
+          </div>
+          <div className="abtme-selfie">
+            <img
+              src={selfieImg}
+              alt="Shanti Ink artist selfie"
+              width={300}
+              height={400}
+            />
+          </div>
+        </section>
+        <main>
+ <BookingInquiry/>
         </main>
      
     </>

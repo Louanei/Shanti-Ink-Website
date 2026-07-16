@@ -95,16 +95,19 @@ footer {
 }
 
 .home {
-    width: 25%;
+    width: 20%;
 }
 .myjourney {
-    width: 25%;
+    width: 20%;
 }
 .portfolio  {
-    width: 25%;
+    width: 20%;
 }
 .contact {
-    width: 25%;
+    width: 20%;
+}
+.shop {
+    width: 20%;
 }
 
 #footer {

@@ -8,6 +8,25 @@ import selfieImg from "./assets/selfie.jpeg";
 
 import "./App.css";
 
+function Header () {
+  return (
+    <header>
+          <h1>Shanti Ink</h1>
+          <h3>Tattoo</h3>
+          <p>Brighton local Independent Artist &amp; Stick and Poke Professional</p>
+ </header>
+  )
+  };
+
+
+  function MenuLinks ({ to, label, className }) {
+    return (
+      <p className={className}>
+        <Link to={to}>{label}</Link>
+      </p>
+    );
+  }
+
 function App () {
 
   return (
@@ -16,40 +35,28 @@ function App () {
     <>
       <title>Shanti Ink Tattoo v1</title>
       <div className="onimask">
-        <header>
-          <h1>Shanti Ink</h1>
-          <h3>Tattoo</h3>
-          <p>Brighton local Independent Artist &amp; Stick and Poke Professional</p>
-        </header>
+<Header/>
         <div className="index">
           <nav>
             <article id="index">
-                <p className="home">
-                <Link to="/">Home</Link>
-              </p>
-              <p className="myjourney">
-                <Link to="/myjourney">My Journey</Link>
-              </p>
-              <p className="portfolio">
-                <Link to="/portfolio">Portfolio</Link>
-              </p>
-              <p className="shop">
-                <Link to="/shop">Shop</Link>
-              </p>
-                <p className="contact">
-                <Link to="/contact">Contact</Link>
-              </p>
+              <MenuLinks to="/" label="Home" className="home" />
+              <MenuLinks to="/myjourney" label="My Journey" className="myjourney" />
+              <MenuLinks to="/portfolio" label="Portfolio" className="portfolio" />
+              <MenuLinks to="/shop" label="Shop" className="shop" />
+              <MenuLinks to="/contact" label="Contact" className="contact" />
             </article>
           </nav>
         </div>
     
          <main>
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/myjourney" element={<MyJourney />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
         </main>
       </div>
       <footer>
