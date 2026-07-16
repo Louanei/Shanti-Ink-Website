@@ -13,6 +13,7 @@ export default function Home() {
     console.log("forms are up");
   }, []);
 
+  /* for me to review*/
   const handleFileChange = (e) => {
     const files = Array.from(e.target.files);
 
@@ -84,6 +85,7 @@ export default function Home() {
       setIsSubmitting(false);
     }
   };
+  /* review all above */
 
   function BookingInquiry() {
     return(
