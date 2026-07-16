@@ -31,7 +31,7 @@ body    {
 }
 
 .abtme-name {
-    width: 40%;
+    width: 39%;
      text-align: center;
      display: flex;
      justify-content: center;
@@ -47,6 +47,7 @@ body    {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-right: 1%;
 }
 
 .abtme-selfie {
@@ -104,6 +105,11 @@ footer {
 }
 .contact {
     width: 25%;
+}
+
+#footer {
+    display: inline-block;
+    text-align: center, auto;
 }
 
 

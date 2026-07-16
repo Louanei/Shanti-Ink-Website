@@ -1,4 +1,5 @@
-// src/pages/Portfolio.jsx
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 export default function Portfolio() {
   return (
     <>
@@ -7,11 +8,5 @@ export default function Portfolio() {
   <main>
 
   </main>
-
-  <footer>
-    <p>ShantiInk Copyright &copy; Louanei 2026</p>
-  </footer>
   </>
-)
-
-}
+)};

@@ -6,6 +6,8 @@ import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import selfieImg from "./assets/selfie.jpeg";
 
+import "./App.css";
+
 function App () {
 
   return (
@@ -31,7 +33,10 @@ function App () {
               <p className="portfolio">
                 <Link to="/portfolio">Portfolio</Link>
               </p>
-              <p className="contact">
+              <p className="shop">
+                <Link to="/shop">Shop</Link>
+              </p>
+                <p className="contact">
                 <Link to="/contact">Contact</Link>
               </p>
             </article>
@@ -49,9 +54,12 @@ function App () {
       </div>
       <footer>
         <p>ShantiInk Copyright © Louanei 2026</p>
+       <p className="tc"><Link to="/Terms and Conditions">Terms and Conditions</Link></p>
+       <p className="pp"><Link to="/Privacy and Policies">Privacy and Policies</Link></p>
       </footer>
     </>
   )
 }
+
 
 export default App
