@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ShopHeader, ShopNav, ShopIndex } from "../App.jsx";
+import { ShopHeader, ShopNav, ShopIndex } from "../../App.jsx";
 
 export default function Shop() {
   return (

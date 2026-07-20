@@ -8,7 +8,9 @@ import Home from "./pages/home";
 import MyJourney from "./pages/myjourney";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
-import Shop from "./pages/shop";
+import Shop from "./pages/shop/shop";
+import ShopPrints from "./pages/shop/shop-prints";
+import ShopTshirts from "./pages/shop/shop-tshirts";
 import selfieImg from "./assets/selfie.jpeg";
 
 import "./App.css";
@@ -36,12 +38,39 @@ export function ShopHeader({label, className}) {
     return (
       <div className="shopindex">
       <ul>
-<ShopNav to="/shop-all" label="All" className="All-Products-Nav"/>
-<ShopNav to="/shop-tshirts" label="T-shirts" className="Tshirts-Products-Nav"/>
-<ShopNav to="/shop-prints" label="Prints" className="Prints-Products-Nav"/>
+<ShopNav to="/Shop" label="All" className="All-Products-Nav"/>
+<ShopNav to="/ShopTshirts" label="T-shirts" className="Tshirts-Products-Nav"/>
+<ShopNav to="/ShopPrints" label="Prints" className="Prints-Products-Nav"/>
 </ul>
 </div>
     )
+  }
+
+  export function Product({ to, className, src, alt, title }) {
+  return (
+    <div className="Product">
+      <Link to={to} className="Product-Link" title={title}>
+        <div className="Product-Asset-Box">
+        <img className="" 
+        src={src}
+        alt={alt}>
+        </img>
+        </div>
+      </Link>
+    </div>
+  )
+}
+
+  export function ProductPage() {
+    return(
+    <>
+    <div className="Product-Box">
+      <div className="Product-Box-Content">
+        </div>
+      </div>
+
+</>
+)
   }
 
 /* I WAS GONNA MAKE THIS INTO A PROP BUT I DECIDED TO MAKE IT A COMPONENT - whoops didnt mean to caps, anyway i decided to make it a component because it seemed to be quite complicated and not just a simple reused function */
@@ -211,6 +240,9 @@ function App () {
           <Route path="/myjourney" element={<MyJourney />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="/ShopTshirts" element={<ShopTshirts />} /> 
+          <Route path="/ShopPrints" element={<ShopPrints />} />
         </Routes>
 
         </main>
