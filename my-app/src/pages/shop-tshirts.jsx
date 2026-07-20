@@ -1,13 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ShopHeader, ShopNav, ShopIndex } from "../App.jsx";
-
+import { ShopHeader } from "../App.jsx";
 export default function Shop() {
   return (
 <>
- <ShopHeader label="Products" className="All-Products-Title"/>
-<ShopIndex/>
-
+<ShopHeader title="Tshirts" className="Tshirts-Products-Title"/>
 <main>
  
 

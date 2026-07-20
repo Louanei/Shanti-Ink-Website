@@ -1,21 +1,4 @@
-body    {
-    margin: 2%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffde74;
-     background-color:rgb(11, 75, 45);
-}
-.onimask {
-    background-image: url('./assets/oni 4.png');
-    background-size: auto;
-    width:60em;
-    max-width: 100%;
-    margin: 0 auto;
-    border: 2px solid;
-    padding:2em 0;
-    position: relative;
-    background-position: center;
-    background-repeat:no-repeat;
-}
+/* HOME PAGE */
 
 #about {
     display: flex;
@@ -63,57 +46,77 @@ body    {
   
 }
 
-header
-{
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-nav,
-main,
-footer { 
-    max-width:100%;
-    text-align: auto;
-    margin: 20px 0;
-
+/* SHOP NAV */
+.shopindex {
+    margin: 0 auto 60px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  color: var(--primary-text-color);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.index {
-    text-align: center;
-    width: 80%;
-    padding: 0.01em;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 2em auto;
-    margin-bottom: 10em;
-    background-color:rgb(11, 75, 45);
-    border: 2px solid #ffde74;
+.shopindex > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--primary-text-color);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-#index p {
-    display:inline-block;
+.shopindex .All-Products-Nav, 
+.Tshirts-Products-Nav,
+.Prints-Products-Nav {
+    margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: center;
+  color: var(--primary-text-color);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.home {
-    width: 20%;
-}
-.myjourney {
-    width: 20%;
-}
-.portfolio  {
-    width: 20%;
-}
-.contact {
-    width: 20%;
-}
-.shop {
-    width: 20%;
+.shopindex .All-Products-Nav a, 
+.Tshirts-Products-Nav a,
+.Prints-Products-Nav a {
+  color: var(--secondary-text-color);
+  display: block;
+  font-size: 1.1em;
+  padding: 2px 6px;
+  outline-offset: 2px;S
+  text-decoration: none;
+  text-underline-offset: 4px;
+  transition: color 0.2s linear;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: center;
+    font-family: var(--secondary-font);
+    line-height: 1.5;
 }
 
-#footer {
-    display: inline-block;
-    text-align: center, auto;
+.shopindex li a:hover {
+  color: (--primary-text-color);
 }
+
 
 
 /* yayyyy ive figured out how to leave comments hurray!

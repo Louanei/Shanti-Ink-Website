@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import selfieImg from "../assets/selfie.jpeg";
 import emailjs from "@emailjs/browser";
 import { compressImage } from "../scripts/imageUtils";
+import { BookingInquiry } from "../App.jsx";
 
 export default function Home() {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -45,12 +46,12 @@ export default function Home() {
     const form = e.target;
 
     try {
-      // Compress each image to stay well under EmailJS's 50kb limit
+      // Code to compress image attachments so that they stay within EmailJS's 50kg character limit.....
       const compressedFiles = await Promise.all(
         selectedFiles.map((file) => compressImage(file, 500, 0.4))
       );
 
-      // Wrap in HTML <img> tags for email body
+      
       const imageMarkup = compressedFiles
         .map(
           (base64) =>
@@ -87,107 +88,6 @@ export default function Home() {
   };
   /* review all above */
 
-  function BookingInquiry() {
-    return(
-                <section>
-            <h2>Booking Inquiries</h2>
-            <div className="booking-inquiries">
-              <p>
-                If you are interested in booking a session with me, please fill out
-                the form below.
-              </p>
-              <form id="booking-form" onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your first name"
-                  autoComplete="name"
-                  required
-                />
-                <label htmlFor="email">Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your email"
-                  autoComplete="email"
-                  required
-                />
-                <label htmlFor="message">Message:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Please include in your message: Concept, Size, Placement, Budget, and Dates of availability for an appointment."
-                  required
-                />
-                <label htmlFor="reference">Attachments (optional):</label>
-                <input
-                  type="file"
-                  id="reference"
-                  name="reference[]"
-                  accept="image/*"
-                  multiple
-                  onChange={handleFileChange}
-                />
-
-                <div
-                  id="preview-container"
-                  style={{
-                    display: "flex",
-                    gap: 10,
-                    flexWrap: "wrap",
-                    margin: "15px 0",
-                  }}
-                >
-                  {previews.map((item, index) => (
-                    <div key={index} style={{ position: "relative" }}>
-                      <img
-                        src={item.url}
-                        alt="attachment preview"
-                        style={{
-                          width: "80px",
-                          height: "80px",
-                          objectFit: "cover",
-                          borderRadius: "4px",
-                          border: "1px solid #ffde74",
-                        }}
-                      />
-                      <button
-                        type="button"
-                        onClick={() => handleRemove(index)}
-                        style={{
-                          position: "absolute",
-                          top: "-5px",
-                          right: "-5px",
-                          background: "red",
-                          color: "white",
-                          border: "none",
-                          borderRadius: "50%",
-                          width: "18px",
-                          height: "18px",
-                          fontSize: "10px",
-                          cursor: "pointer",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
-                      >
-                        ✕
-                      </button>
-                    </div>
-                  ))}
-                </div>
-
-                <button type="submit" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Send"}
-                </button>
-              </form>
-            </div>
-          </section>
-    )
-  }
 
   return (
     <>

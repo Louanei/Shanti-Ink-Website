@@ -1,3 +1,89 @@
+body    {
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffde74;
+     background-color:rgb(11, 75, 45);
+}
+.onimask {
+    background-image: url('./assets/oni 4.png');
+    background-size: auto;
+    width:60em;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid;
+    padding:2em 0;
+    position: relative;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+header
+{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+nav,
+main,
+footer { 
+    max-width:100%;
+    text-align: auto;
+    margin: 20px 0;
+
+}
+
+/*NAV - which is on every page */
+
+.index {
+    text-align: center;
+    width: 80%;
+    padding: 0.01em;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2em auto;
+    margin-bottom: 10em;
+    background-color:rgb(11, 75, 45);
+    border: 2px solid #ffde74;
+}
+
+#index p {
+    display:inline-block;
+}
+
+.home {
+    width: 20%;
+}
+.myjourney {
+    width: 20%;
+}
+.portfolio  {
+    width: 20%;
+}
+.contact {
+    width: 20%;
+}
+.shop {
+    width: 20%;
+}
+
+#footer {
+    display: inline-block;
+    text-align: center, auto;
+}
+
+
+:root {
+    --primary-text-color: #ffde74;
+    --secondary-text-color: #d1c28c;
+}
+
+
+
+
+
+
+
+
 
 
 /* I have yet to decide on universal css rules for the site...*/
