@@ -18,6 +18,7 @@ import './index.css';
 
 /*COMPONENTS AND PROPS */
 
+/*shop */
 export function ShopHeader({label, className}) {
     return (
       <header>
@@ -46,20 +47,43 @@ export function ShopHeader({label, className}) {
     )
   }
 
-  export function Product({ to, className, src, alt, title }) {
+  export function ProductCard({ to, className, src, alt, title, label }) {
   return (
-    <div className="Product">
+    <div className="ProductCard">
       <Link to={to} className="Product-Link" title={title}>
-        <div className="Product-Asset-Box">
-        <img className="" 
+        <div className="ProductCard-Box">
+        <img className="ProductCard-Box-Content" 
         src={src}
-        alt={alt}>
+        alt={alt}
+        srcset={`
+        ${images.small} 320w, 
+        ${images.medium} 600w, 
+        ${images.large} 960w
+        `}
+        sizes="(max-width: 600px) 100vw, 356px"
+        loading="lazy">
         </img>
         </div>
+       
       </Link>
     </div>
   )
+
+  /* had to look into this one */
+  export function PriceTag({amount, currency = 'GBP'}) {
+    const formattedPrice = new Intl.NumberFormat('en-GB', {
+      style: 'currency',
+      currency: currency,
+    }). format(amount);
+  }
 }
+
+  export function ProductPrice({amount, currency}){
+  return(
+    <>
+    <PriceTag amount={amount} currency={currency} />
+    </>
+  )}
 
   export function ProductPage() {
     return(
