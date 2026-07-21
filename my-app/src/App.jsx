@@ -68,6 +68,7 @@ export function ShopHeader({label, className}) {
       </Link>
     </div>
   )
+}
 
   /* had to look into this one */
   export function PriceTag({amount, currency = 'GBP'}) {
