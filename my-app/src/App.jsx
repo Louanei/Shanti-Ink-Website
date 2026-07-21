@@ -47,7 +47,7 @@ export function ShopHeader({label, className}) {
     )
   }
 
-  export function ProductCard({ to, className, src, alt, title, label }) {
+  export function ProductCard({ to, className, src, alt, title }) {
   return (
     <div className="ProductCard">
       <Link to={to} className="Product-Link" title={title}>
@@ -64,7 +64,7 @@ export function ShopHeader({label, className}) {
         loading="lazy">
         </img>
         </div>
-       
+       <ProductInfo />
       </Link>
     </div>
   )
@@ -78,11 +78,12 @@ export function ShopHeader({label, className}) {
     }). format(amount);
   }
 
-  export function ProductPrice({amount, currency}){
+  export function ProductInfo({amount, currency, label}){
   return(
-    <>
+    <div className="Product-Info">
+      <div className="Product-Info-Name">{label}</div>
     <PriceTag amount={amount} currency={currency} />
-    </>
+    </div>
   )}
 
   export function ProductPage() {
