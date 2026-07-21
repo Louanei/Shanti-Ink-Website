@@ -77,7 +77,6 @@ export function ShopHeader({label, className}) {
       currency: currency,
     }). format(amount);
   }
-}
 
   export function ProductPrice({amount, currency}){
   return(
