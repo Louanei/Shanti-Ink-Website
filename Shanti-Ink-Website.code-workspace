@@ -4,7 +4,8 @@
 			"path": "."
 		},
 		{
-			"path": "../Glowkeeper/creative-process-software-bootcamp-jun26"
+			"name": "creative-process-software-bootcamp-jun26",
+			"path": "../creative-process-software-bootcamp-jun26"
 		}
 	],
 	"settings": {

@@ -11,7 +11,16 @@ import Contact from "./pages/contact";
 import Shop from "./pages/shop/shop";
 import ShopPrints from "./pages/shop/shop-prints";
 import ShopTshirts from "./pages/shop/shop-tshirts";
+
 import selfieImg from "./assets/selfie.jpeg";
+
+import shirt1 from "./assets/products/shirts/shirt1.jpeg";
+import shirt2 from "./assets/products/shirts/shirt2.jpg";
+import shirt3 from "./assets/products/shirts/shirt3.jpg";
+import prints2 from "./assets/products/prints/prints2.jpg";
+import print3 from "./assets/products/prints/prints3.jpeg";
+import prints1 from "./assets/products/prints/prints1.jpg";
+
 
 import "./App.css";
 import './index.css';
@@ -47,19 +56,26 @@ export function ShopHeader({label, className}) {
     )
   }
 
-  export function ProductCard({ to, className, src, alt, title }) {
+  export function ProductCard({ to, src, alt, title }) {
+
+  const defaultSRC = src?.default || src?;
+
+  const srcSetString = [
+    src?.small && `{src.small} 320w`,
+    src?.medium && `{src.medium} 600w`,
+    src?.large && `{src.large} 960w`]
+
+  .filter(Boolean)
+  .join(',');
+
   return (
     <div className="ProductCard">
       <Link to={to} className="Product-Link" title={title}>
         <div className="ProductCard-Box">
         <img className="ProductCard-Box-Content" 
-        src={src}
+        src={defaultSRC}
         alt={alt}
-        srcset={`
-        ${images.small} 320w, 
-        ${images.medium} 600w, 
-        ${images.large} 960w
-        `}
+        {...(srcSetString && { srcSet: srcSetString })}
         sizes="(max-width: 600px) 100vw, 356px"
         loading="lazy">
         </img>
@@ -76,6 +92,8 @@ export function ShopHeader({label, className}) {
       style: 'currency',
       currency: currency,
     }). format(amount);
+
+  return <span className="Price-Tag">{formattedPrice}</span>;
   }
 
   export function ProductInfo({amount, currency, label}){
@@ -86,17 +104,61 @@ export function ShopHeader({label, className}) {
     </div>
   )}
 
-  export function ProductPage() {
-    return(
-    <>
-    <div className="Product-Box">
-      <div className="Product-Box-Content">
-        </div>
-      </div>
+export function Shirt1() {
+  return (
+    <ProductCard 
+      to="/shop/products/shirt1" 
+      title="Shanti Ink Classic Tee" 
+      src={shirt1} 
+      alt="Shirt 1"
+      amount={25.00}
+    />
+  );
+}
+export function Shirt2 (){
+  return(
+<ProductCard to="src/shop/products/shirt2" 
+title="Shirt 2" 
+src="./assets/products/shirts/shirt2.jpg" 
+alt= "Shirt 2"/>
+  )
+}
 
-</>
-)
-  }
+  export function Shirt3 (){
+    return(
+    <ProductCard to="src/shop/products/shirt3" 
+    title="Shirt 3" 
+    src="./assets/products/shirts/shirt3.jpg" 
+    alt="Shirt 3"/>
+  )
+}
+
+  export function Print1 (){
+  return(
+    <ProductCard to="src/shop/products/prints1" 
+    title="Print 1" 
+    src="./assets/products/prints/prints1.jpg" 
+    alt="Print 1"/>
+  )
+}
+export function Print2 (){
+  return(
+<ProductCard to="src/shop/products/prints2" 
+title="Print 2 2" 
+src="./assets/products/prints/print2.jpg" 
+alt= "Print 2"/>
+  )
+}
+
+  export function Print3 (){
+    return(
+    <ProductCard to="src/shop/products/prints" 
+    title="Print 3" 
+    src="./assets/products/prints/prints3.jpg" 
+    alt="Print 3"/>
+  )
+}
+
 
 /* I WAS GONNA MAKE THIS INTO A PROP BUT I DECIDED TO MAKE IT A COMPONENT - whoops didnt mean to caps, anyway i decided to make it a component because it seemed to be quite complicated and not just a simple reused function */
 
